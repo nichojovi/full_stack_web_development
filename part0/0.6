@@ -1,0 +1,5 @@
+note over browser:
+the browser add a new note to the list
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"testing data"}
