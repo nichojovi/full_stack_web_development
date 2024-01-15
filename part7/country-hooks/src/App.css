@@ -1,0 +1,44 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.brand-icon {
+  height: 6rem;
+  padding: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.brand-icon:hover {
+  filter: drop-shadow(0 0 2rem #646cffaa);
+}
+
+.brand-icon.react-version:hover {
+  filter: drop-shadow(0 0 2rem #61dafbaa);
+}
+
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .container a:nth-child(2) .brand-icon {
+    animation: rotate-animation infinite 20s linear;
+  }
+}
+
+.information-card {
+  padding: 2rem;
+}
+
+.document-link {
+  color: #888;
+}
